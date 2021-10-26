@@ -26,7 +26,16 @@ An example is this tweet: "Hey @CheerTunes play spotify:album:5dN7F9DV0Qg1XRdIgW
 - Then tweet as in the above example
 - Cheertunes will tweet what is currently playing in response
 
-## Setup
+## Dependencies
+
+- You need to have Python3 and "pip" installed. For details see (here)[https://www.python.org/downloads/] and (here)[https://www.makeuseof.com/tag/install-pip-for-python]
+- Then install the two required packages (Paho.MQtt and SpotiPy) with
+
+```
+$ pip install -r requirements.txt
+```
+
+## Configuration
 
 Follow these steps to configure up your local PC system to play tunes from CheerTunes.
 
@@ -59,3 +68,10 @@ Follow these steps to configure up your local PC system to play tunes from Cheer
 
 - The next time you connect to the Spotify Web API the cached authentication token will be used and it will all "just work"(tm)
 
+## Running It!
+
+Then tweet something like the example above, you will see an MQTT message received with the Spotify URI and it should play.
+
+**NOTE**: The script does not currently automatically start playing tunes on your Spotify account as that could be very irritating.
+
+          You must **first** already be playing some tune on either the local system or some other Spotify device and playback will switch to the new UID
