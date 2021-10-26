@@ -34,12 +34,28 @@ Follow these steps to configure up your local PC system to play tunes from Cheer
 - Next create a Spotify developer account here [https://developer.spotify.com](https://developer.spotify.com)
 - Log in and go to the developer dashboard here [https://developer.spotify.com/dashboard/](https://developer.spotify.com/dashboard)
 - Create an "app" and give it a name, e.g. CheerTunes
+
+![Spotify Dashboard App](https://github.com/DynamicDevices/cheertunes/blob/main/images/SpotifyDevDash.png)
+
 - Edit the app settings and add a dummy "redirect" say [http://127.0.0.1/dummy](http://127.0.0.1/dummy) and save these settings
 - Copy down the client ID (e.g. 5c2e949d1ee548xxxxxxx ) and the client secret (e.g. c7c6c4d471f74e.....)
 - Edit the `cheerlights_spotify.sh` file to set `SPOTIPY_CLIENT_ID` and `SPOTIPY_CLIENT_SECRET` to what you have just copied down.
 - If you have changed the dummy URL then change `SPOTIPY_REDIRECT_URI` to what you have used.
 - Next run `./cheerlights_spotify.sh`. This will run `cheerlights_spotify.py`, connect to the CheerTunes broker and wait for MQTT messages to be received
 - When a Spotify play command is received the script will connect to your application via the Spotify Web API to play the required URI
-- **NOTE** The first time the script connects to Spotify Web API you will be asked to authenticate via a browser. Click "Agree" and the browser will be directed to the "dummy" URL you provided with extra "token" information. The browser will fail to go to the URL as it is a dummy but copy this and enter it into the command line for the script to authenticate. This information is cached in a `.cache` file so if you ever need to re-authenticate remove this file
+- **NOTE** The first time the script connects to Spotify Web API you will be asked to authenticate via a browser. Click "Agree".
+
+![Spotify Accept Page](https://github.com/DynamicDevices/cheertunes/blob/main/images/SpotifyAccept.png)
+
+- The browser will be directed to the "dummy" URL you provided with extra "token" information. The browser will fail to go to the URL as it is a dummy but copy this.
+
+![Spotify Browser URL example](https://github.com/DynamicDevices/cheertunes/blob/main/images/SpotifyAuthCopyURL.png)
+
+- Then enter it into the waiting command line for the script to authenticate. 
+
+![CheerTunes Script Entry](https://github.com/DynamicDevices/cheertunes/blob/main/images/SpotifyAuthURIEntry.png)
+
+- This information is cached in a `.cache` file so if you ever need to re-authenticate remove this file
+
 - The next time you connect to the Spotify Web API the cached authentication token will be used and it will all "just work"(tm)
 
