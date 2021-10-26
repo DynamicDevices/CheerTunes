@@ -31,13 +31,13 @@ An example is this tweet: `Hey @CheerTunes play spotify:album:5dN7F9DV0Qg1XRdIgW
 You can check out from the GitHub repo with
 
 ```
-git clone https://github.com/DynamicDevices/cheertunes
+git clone https://github.com/DynamicDevices/CheerTunes
 ```
 
 Or if you prefer to download and unzip you can download from
 
 ```
-https://github.com/DynamicDevices/cheertunes/releases
+https://github.com/DynamicDevices/CheerTunes/releases
 ```
 
 # Dependencies
@@ -46,7 +46,7 @@ https://github.com/DynamicDevices/cheertunes/releases
 - Then install the two required packages [Paho.MQtt](https://pypi.org/project/paho-mqtt/) and [SpotiPy](https://pypi.org/project/spotipy/) with
 
 ```
-$ cd cheertunes
+$ cd CheerTunes
 $ pip install -r requirements.txt
 ```
 
