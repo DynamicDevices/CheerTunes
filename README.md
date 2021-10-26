@@ -41,7 +41,7 @@ https://github.com/DynamicDevices/cheertunes/releases
 # Dependencies
 
 - You need to have Python3 and "pip" installed. For details see [here](https://www.python.org/downloads) and [here](https://www.makeuseof.com/tag/install-pip-for-python)
-- Then install the two required packages (Paho.MQtt and SpotiPy) with
+- Then install the two required packages [Paho.MQtt](https://pypi.org/project/paho-mqtt/) and [SpotiPy](https://pypi.org/project/spotipy/) with
 
 ```
 $ cd cheertunes
