@@ -16,11 +16,11 @@ There is a Python script which provides the "glue" between CheerTunes publishing
 
 # How to tweet to CheerTunes
 
-An example is this tweet: "Hey @CheerTunes play spotify:album:5dN7F9DV0Qg1XRdIgW8rke"
+An example is this tweet: `Hey @CheerTunes play spotify:album:5dN7F9DV0Qg1XRdIgW8rke`
 
 - To find the Spotify URI run up Spotify and search for an artist or album or playlist you want to play.
 - Then click ... and "Share->". This will show "Copy Album Link". Then press the ALT key and this will change to "Copy Spotify URI"
-- Copy the URI and it will be of a similar form to "spotify:album:5dN7F9DV0Qg1XRdIgW8rke"
+- Copy the URI and it will be of a similar form to `spotify:album:5dN7F9DV0Qg1XRdIgW8rke`
 - Then tweet as in the above example
 - Cheertunes will tweet what is currently playing in response
 
