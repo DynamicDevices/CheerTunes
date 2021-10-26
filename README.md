@@ -88,3 +88,7 @@ Follow these steps to configure up your local PC system to play tunes from Cheer
 Then tweet something like the example above, you will see an MQTT message received with the Spotify URI and it should play.
 
 **NOTE**: The script does not currently automatically start playing tunes on your Spotify account as that could be very irritating. You must **first** already be playing some tune on either the local system or some other Spotify device and playback will switch to the new UID
+
+# Feedback
+
+If you have ideas on how we can improve CheerTunes please contribute to the [discussion](https://github.com/DynamicDevices/cheertunes/discussions)
