@@ -59,19 +59,21 @@ Follow these steps to configure up your local PC system to play tunes from Cheer
 
 ![Spotify Dashboard App](https://www.cheertunes.co.uk/images/SpotifyDevDash.png)
 
-- Edit the app settings and add a dummy "redirect" say [http://127.0.0.1/dummy](http://127.0.0.1/dummy) and save these settings
-- Copy down the client ID (e.g. 5c2e949d1ee548xxxxxxx ) and the client secret (e.g. c7c6c4d471f74e.....)
-- Edit the `cheertunes_spotify.sh` file to set `SPOTIPY_CLIENT_ID` and `SPOTIPY_CLIENT_SECRET` to what you have just copied down.
+- Edit the app settings and add a dummy "redirect" say [http://127.0.0.1/dummy](http://127.0.0.1/dummy) and save these settings.
+- Copy down the client ID (e.g. `5c2e949d1ee548xxxxxxx`) and the client secret (e.g. `c7c6c4d471f74e.....`).
+- Edit the `cheertunes_spotify.sh` (Linux) or `cheertunes_spotify.bat` (Windows) file.
+- Set `SPOTIPY_CLIENT_ID` and `SPOTIPY_CLIENT_SECRET` to what you have just copied down.
 - If you have changed the dummy URL then change `SPOTIPY_REDIRECT_URI` to what you have used.
-- Next run `./cheertunes_spotify.sh`. This will run `cheertunes_spotify.py`, connect to the CheerTunes broker and wait for MQTT messages to be received
-- When a Spotify play command is received the script will connect to your application via the Spotify Web API to play the required URI
+- Next run `./cheertunes_spotify.sh` (Linux) or `cheertunes_spotify.bat` (Windows).
+- This will run `cheertunes_spotify.py`, connect to the CheerTunes broker and wait for MQTT messages to be received.
+- When a Spotify play command is received the script will connect to your application via the Spotify Web API to play the required URI.
 - **NOTE** The first time the script connects to Spotify Web API you will be asked to authenticate via a browser. Click "Agree".
 
 ![Spotify Accept Page](https://www.cheertunes.co.uk/images/SpotifyAccept.png)
 
 - The browser will be directed to the "dummy" URL you provided with extra "token" information. The browser will fail to go to the URL as it is a dummy but copy this.
 
-![Spotify Browser URL example](https://github.com/DynamicDevices/cheertunes/blob/main/images/SpotifyAuthCopyURL.png)
+![Spotify Browser URL example](https://www.cheertunes.co.uk/images/SpotifyAuthCopyURL.png)
 
 - Then enter it into the waiting command line for the script to authenticate. 
 
