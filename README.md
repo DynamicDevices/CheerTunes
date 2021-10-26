@@ -24,12 +24,27 @@ An example is this tweet: "Hey @CheerTunes play spotify:album:5dN7F9DV0Qg1XRdIgW
 - Then tweet as in the above example
 - Cheertunes will tweet what is currently playing in response
 
+# Grabbing the code
+
+You can check out from the GitHub repo with
+
+```
+git clone https://github.com/DynamicDevices/cheertunes
+```
+
+Or if you prefer to download and unzip you can download from
+
+```
+https://github.com/DynamicDevices/cheertunes/releases
+```
+
 # Dependencies
 
-- You need to have Python3 and "pip" installed. For details see (here)[https://www.python.org/downloads/] and (here)[https://www.makeuseof.com/tag/install-pip-for-python]
+- You need to have Python3 and "pip" installed. For details see [here](https://www.python.org/downloads) and [here](https://www.makeuseof.com/tag/install-pip-for-python)
 - Then install the two required packages (Paho.MQtt and SpotiPy) with
 
 ```
+$ cd cheertunes
 $ pip install -r requirements.txt
 ```
 
@@ -66,7 +81,7 @@ Follow these steps to configure up your local PC system to play tunes from Cheer
 
 - The next time you connect to the Spotify Web API the cached authentication token will be used and it will all "just work"(tm)
 
-# Running It!
+# Playing Tunes !!!
 
 Then tweet something like the example above, you will see an MQTT message received with the Spotify URI and it should play.
 
