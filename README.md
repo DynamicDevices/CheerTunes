@@ -54,7 +54,7 @@ Follow these steps to configure up your local PC system to play tunes from Cheer
 - When a Spotify play command is received the script will connect to your application via the Spotify Web API to play the required URI
 - **NOTE** The first time the script connects to Spotify Web API you will be asked to authenticate via a browser. Click "Agree".
 
-![Spotify Accept Page](https://github.com/DynamicDevices/cheertunes/blob/main/images/SpotifyAccept.png)
+![Spotify Accept Page](https://www.cheertunes.co.uk/images/SpotifyAccept.png)
 
 - The browser will be directed to the "dummy" URL you provided with extra "token" information. The browser will fail to go to the URL as it is a dummy but copy this.
 
@@ -62,7 +62,7 @@ Follow these steps to configure up your local PC system to play tunes from Cheer
 
 - Then enter it into the waiting command line for the script to authenticate. 
 
-![CheerTunes Script Entry](https://github.com/DynamicDevices/cheertunes/blob/main/images/SpotifyAuthURIEntry.png)
+![CheerTunes Script Entry](https://www.cheertunes.co.uk/images/SpotifyAuthURIEntry.png)
 
 - This information is cached in a `.cache` file so if you ever need to re-authenticate remove this file
 
