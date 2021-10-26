@@ -44,7 +44,7 @@ Follow these steps to configure up your local PC system to play tunes from Cheer
 - Log in and go to the developer dashboard here [https://developer.spotify.com/dashboard/](https://developer.spotify.com/dashboard)
 - Create an "app" and give it a name, e.g. CheerTunes
 
-![Spotify Dashboard App](https://github.com/DynamicDevices/cheertunes/blob/main/images/SpotifyDevDash.png)
+![Spotify Dashboard App](https://www.cheertunes.co.uk/images/SpotifyDevDash.png)
 
 - Edit the app settings and add a dummy "redirect" say [http://127.0.0.1/dummy](http://127.0.0.1/dummy) and save these settings
 - Copy down the client ID (e.g. 5c2e949d1ee548xxxxxxx ) and the client secret (e.g. c7c6c4d471f74e.....)
