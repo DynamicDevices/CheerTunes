@@ -1,3 +1,5 @@
+![](https://www.cheertunes.co.uk/images/cheertunes_banner.png)
+
 # Overview
 
 CheerTunes is an idea based on the awesome [CheerLights](https://cheerlights.com) by Hans Scharler.
